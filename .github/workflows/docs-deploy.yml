@@ -26,6 +26,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: docs/.vitepress/dist
+          folder: .vitepress/dist
           ssh-key: ${{ secrets.SSH_TOKEN }}
           repository-name: RimuruW/ArchLinuxGuide
