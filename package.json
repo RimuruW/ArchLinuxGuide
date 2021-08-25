@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Arch Linux Guide for freshman",
   "author": "Qingxu",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "private": true,
   "devDependencies": {
     "vitepress": "^0.16.1"
