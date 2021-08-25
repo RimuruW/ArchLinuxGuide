@@ -1,0 +1,16 @@
+{
+  "name": "archlinuxguide",
+  "version": "1.0.0",
+  "description": "Arch Linux Guide for freshman",
+  "author": "Qingxu",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vitepress": "^0.16.1"
+  },
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve ."
+  }
+}
