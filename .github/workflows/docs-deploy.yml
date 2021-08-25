@@ -1,4 +1,4 @@
-name: Deploy theme docs
+name: Deploy docs
 
 on:
   push:
