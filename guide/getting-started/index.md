@@ -4,7 +4,7 @@
 
 如果你是 GNU/Linux 新手，建议你先阅读一遍 [FAQ](/#faq)。
 
-如果你是想安装 Arch Linux + Windows 双系统，请阅读 [多系统安装#Windows](/advanced/Dual-boot/#Windows) 部分。
+如果你是想安装 Arch Linux + Windows 双系统，请阅读 [多系统启动#Windows](/advanced/Dual-boot/#Windows) 部分。
 
 
 ## 确定电脑的启动类型
@@ -12,7 +12,11 @@
 
 电脑启动类型可以粗略地分为「传统 BIOS」（简称 BIOS）和「UEFI」。因为两者在启动盘制作上和安装步骤上存在差异，所以必须在安装前对电脑的启动类型进行确认。如果是最近十年生产的设备，使用的一般是 UEFI 引导。
 
+如果系统未以你想要的模式引导启动，请参考你的主板说明书。
+
 :::
+
+### Windows 确定方法
 
 首先启动进入 Windows 桌面，同时按下 Win+R 打开运行对话框，然后输入 `msinfo32` 后回车确认打开系统信息。
 
@@ -22,11 +26,21 @@
 
 ![“系统信息”窗口](./8qd7scg.png)
 
+### Linux 确定方法
+
+Linux 输入如下命令
+
+```bash
+ls /sys/firmware/efi/efivars
+```
+
+如果命令结果显示了目录且没有报告错误，则系统以 UEFI 模式引导。 如果目录不存在，则系统可能以 [BIOS](https://en.wikipedia.org/wiki/BIOS) 模式 (或 [CSM](https://en.wikipedia.org/wiki/Compatibility_Support_Module) 模式) 引导。
+
 ## 准备安装介质
 
 ### 下载 Arch Linux ISO
 
-你可以通过一下网站的任意一个获取 Arch Linux ISO 文件（下文简称 archiso）
+你可以通过以下网站中的任意一个获取 Arch Linux ISO 文件（下文简称 archiso）
 
 - [清华大学开源软件镜像站](http://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/)
 - [中国科技大学开源软件镜像站](http://mirrors.ustc.edu.cn/archlinux/iso/)
@@ -132,11 +146,11 @@ Arch Linux 单系统安装可以不禁用 Windows 的快速启动但一定要禁
 
 该部分建议自行在网上寻找相关教程。因为不同电脑可能存在不同的设置方式和 BIOS 界面，不便统一概述，因此最好的办法是在网上找到自己机型对应的教程。
 
-这里给出常见的电脑厂商的进入 BIOS 快捷键
+这里给出常见的电脑厂商的进入 BIOS 快捷键（~~开机的时候狂敲就对了~~）
 
 | 电脑厂商        | 快捷键 |
 | ------------- | -----:|
-| 联想（含拯救者、ThinkPad） | F12 |
+| 联想（含拯救者、ThinkPad） | F2 或 F12 |
 | 华为    | Fn + F2 |
 | 华硕 | ESC |
 | 惠普 | F9 (-F10) |
