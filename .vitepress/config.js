@@ -2,7 +2,9 @@ module.exports = {
   lang: "zh-CN",
   title: "Arch Linux 新手文档",
   description: "Keep it simple, stupid.",
-
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }]
+  ],
   themeConfig: {
     repo: "RimuruW/ArchLinuxGuide",
     editLinks: true,
