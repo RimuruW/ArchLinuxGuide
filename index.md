@@ -104,7 +104,7 @@ Linux 发行版一般不存在所谓「这个更好，那个更差」的说法�
 
 ### Manjaro 和 Arch Linux 是什么关系，我是小白是否应该使用 Manjaro？
 
-Manjaro 是一个由商业公司运作、社区支持的 Linux 发行版。Manjaro 基于 Arch Linux，也使用 Pacman 作为包管理，提供图形化安装界面。Manjaro 通过更新比 Arch Linux 慢几天的方式实现它定义的「稳定」，并对 Arch Linux 进行了一系列修改以确保它定义的「用户友好」。我无权对 Manjaro 及其社区和用户进行评价，这里仅列出我认为的 Manjaro 存在的一系列问题。
+Manjaro 是一个由商业公司运作、社区支持的 Linux 发行版。Manjaro 基于 Arch Linux，也使用 Pacman 作为包管理，提供图形化安装界面。Manjaro 通过更新比 Arch Linux 慢几天的方式实现它定义的「稳定」，并对 Arch Linux 进行了一系列修改以确保它定义的「用户友好」。我无权对 Manjaro 及其社区和用户进行评价，这里仅列出我认为的 Manjaro 存在的一些问题。
 
 - Arch Linux 的两大优势是「自定义安装」和「滚动更新」，这也是 Arch Linux 的核心。如果把 Arch Linux 比作一个巨人，那么 Manjaro 就是先锯掉了巨人的一条腿（使用图形化安装），然后打瘸了另一条腿（延后滚动更新时间）
 - Manjaro 社区支持较 Arch Linux 社区更为薄弱，且社区决策地位更低
