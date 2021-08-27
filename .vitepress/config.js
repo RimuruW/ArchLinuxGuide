@@ -3,7 +3,7 @@ module.exports = {
   title: "Arch Linux 新手文档",
   description: "Keep it simple, stupid.",
   head: [
-    ['link', { rel: 'icon', href: '/favicon.png' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
     repo: "RimuruW/ArchLinuxGuide",
@@ -42,6 +42,7 @@ function getGuideSidebar() {
       text: "进阶配置",
       children: [
         { text: "成为一个合格的 Arch User", link: "/advanced/" },
+        { text: "多系统启动", link: "/advanced/Dual-boot/" },
       ],
     },
   ];
