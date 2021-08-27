@@ -2,13 +2,11 @@ module.exports = {
   lang: "zh-CN",
   title: "Arch Linux 新手文档",
   description: "Keep it simple, stupid.",
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
-  ],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     repo: "RimuruW/ArchLinuxGuide",
     editLinks: true,
-    editLinkText: "Edit this page on GitHub",
+    editLinkText: "在 GitHub 上帮助我们改进此页",
     lastUpdated: "Last Updated",
 
     nav: [
